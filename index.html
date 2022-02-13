@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Студенты</title>
+  <link rel="stylesheet" href="css/bootstrap5.1.3.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <div class="container py-4">
+    <h1>Студенты</h1>
+    <div class="row gy-5">
+      <div class="col-8">
+        <form>
+          <fieldset>
+            <legend>Быстрый поиск</legend>
+            <div class="row justify-content-start">
+              <div class="mb-3 col-3">
+                <label for="search-name" class="form-label">ФИО</label>
+                <input type="text" id="search-name" class="form-control" placeholder="введите имя">
+              </div>
+              <div class="mb-3 col-3">
+                <label for="search-faculty" class="form-label">Факультет</label>
+                <input type="text" id="search-faculty" class="form-control" placeholder="введите факультет">
+              </div>
+              <div class="mb-3 col-3">
+                <label for="search-enter-year" class="form-label">Год начала обучения</label>
+                <input type="number" id="search-enter-year" class="form-control" placeholder="введите год начала обучения">
+              </div>
+              <div class="mb-3 col-3">
+                <label for="search-finish-year" class="form-label">Год окончания обучения</label>
+                <input type="number" id="search-finish-year" class="form-control" placeholder="введите год начала обучения">
+              </div>
+            </div>
+          </fieldset>
+        </form>
+        <table class="table table-striped">
+          <tr>
+            <th><button class="table-surname btn btn-outline-dark">Фамилия</button></th>
+            <th><button class="table-name btn btn-outline-dark">Имя</button></th>
+            <th><button class="table-patronymic btn btn-outline-dark">Отчество</button></th>
+            <th><button class="table-birthdate btn btn-outline-dark">Дата рождения</button></th>
+            <th><button class="table-enter-date btn btn-outline-dark">Год начала обучения</button></th>
+            <th><button class="table-faculty btn btn-outline-dark">Факультет</button></th>
+          </tr>
+        </table>
+      </div>
+      <div class="col-4">
+        <form action="">
+          <h2>Новый студент</h2>
+          <label class="form-label">Фамилия
+            <input class="surname mb-3 form-control" type="text">
+          </label>
+          <label class="form-label">Имя
+            <input class="name  mb-3 form-control" type="text">
+          </label>
+          <label class="form-label">Отчество
+            <input class="patronymic  mb-3 form-control" type="text">
+          </label>
+          <label class="form-label">Дата рождения
+            <input class="birthdate  mb-3 form-control" type="date" min="1900-01-01">
+          </label>
+          <label class="form-label">Год начала обучения
+            <input class="enter-date  mb-3 form-control" type="number" min="2000-01-01">
+          </label>
+          <label class="form-label">Факультет
+            <input class="faculty mb-3 form-control" type="text">
+          </label>
+          <mark class="empty-field">Заполните поля: <span></span></mark>
+          <mark class="wrong-date">Некорректная дата в поле:  <span></span></mark>
+          <button class="adding-btn btn btn-success">Добавить студента</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+mark {
+  display: none;
+  margin-bottom: 20px;
+}
+
+.shown-mark {
+  display: block;
+}
